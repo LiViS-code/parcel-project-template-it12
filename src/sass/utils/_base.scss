@@ -1,0 +1,18 @@
+body {
+   font-family: $main-font ;
+   font-size: 12px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: $main-text-color;
+
+
+
+   @media screen and (min-width:$min-mobile) {
+      overflow-x: hidden;
+   }
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
