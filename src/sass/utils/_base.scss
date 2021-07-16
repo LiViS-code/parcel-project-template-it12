@@ -5,11 +5,9 @@ body {
    letter-spacing: 0.04em;
    color: $main-text-color;
 
-
-
-   @media screen and (min-width: $min-mobile) and (max-width: $mobile - 1) {
-      width: 90vw;
-}
+   @media screen and (min-width: 320px) {
+      overflow-x: hidden;
+   }
 }
 img {
    display: block;
