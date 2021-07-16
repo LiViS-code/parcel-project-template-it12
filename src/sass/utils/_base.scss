@@ -1,0 +1,18 @@
+body {
+   font-family: $main-font ;
+   font-size: 12px;
+   line-height: 1.5;
+   letter-spacing: 0.04em;
+   color: $main-text-color;
+
+
+
+   @media screen and (min-width: $min-mobile) and (max-width: $mobile - 1) {
+      width: 90vw;
+}
+}
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+ }
