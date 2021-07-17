@@ -250,6 +250,7 @@ form {
 
 .hero__button:focus, .hero__button:hover {
   cursor: pointer;
+  color: #ffffff;
 }
 
 .hero__button--white {
@@ -259,6 +260,7 @@ form {
 }
 
 .hero__button--white:focus, .hero__button--white:hover {
+  color: #d41443;
   background-color: #ecebeb;
   cursor: pointer;
 }
@@ -342,6 +344,75 @@ form {
   margin-bottom: 23px;
 }
 
+.footer-section {
+  padding-bottom: 43px;
+}
+
+.description__container {
+  padding: 0 66px 0 20px;
+  margin-bottom: 43px;
+}
+
+.description__pre-title {
+  margin-bottom: 17px;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6667;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.description__accent-title {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+
+.contact-footer__text {
+  padding-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.contact-footer__link {
+  color: #d41443;
+}
+
+.copyright__section {
+  padding: 22px 0 25px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.copyright__text {
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #907e82;
+}
+
 .buttons-list {
   margin-bottom: 113px;
 }
@@ -363,7 +434,10 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 147px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 20px;
   margin-bottom: 46px;
 }
 
@@ -377,7 +451,23 @@ form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   border-radius: 50%;
+  color: #ffffff;
+  background-color: #fea5bb;
+}
+
+.media-list__link:hover, .media-list__link:focus, .media-list__link:active {
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.media-list__icon {
+  fill: currentColor;
 }
 
 .place-of-sale__container {
@@ -470,5 +560,64 @@ form {
 
 .sale-address-list__item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+.ul {
+  list-style: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section-advantages {
+  max-width: 1280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 39px;
+  padding-right: 80px;
+  padding-bottom: 97px;
+  padding-left: 10px;
+  background-color: #FFF5F6;
+  color: black;
+}
+
+.section-advantages__card {
+  margin-bottom: 38px;
+}
+
+.section-advantages__list {
+  margin-bottom: -38px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 16px;
+}
+
+.section-advantages__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  margin-bottom: 16px;
+}
+
+.section-advantages__description {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 /*# sourceMappingURL=main.css.map */
