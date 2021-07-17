@@ -39,9 +39,18 @@ color: black;
 
 }
 
-.section-advantages__icon{
-  fill: purple; 
+.section-advantages__list{
+  outline: 1px solid red;
+  
 }
+
+.section-advantages__item{
+  display: block;
+  background-color: yellow;
+  min-width: 230px;
+  margin-bottom: 16px;
+}
+
 
 .section-advantages__title{
   color: $title-text-color;
