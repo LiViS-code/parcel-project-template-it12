@@ -69,7 +69,7 @@
     display: none;
   }
 }
-.header__button{
+.header__button { 
 width: 160px;
 height: 44px;
 padding-top:14px ;
@@ -137,6 +137,7 @@ color:$title-text-color;
   &:focus,
   &:hover {
      cursor: pointer;
+     color: $main-text-color;
   }
 
   &--white {
@@ -145,6 +146,7 @@ color:$title-text-color;
     background-color: $main-text-color;
     &:focus,
     &:hover {
+      color:$title-text-color;
        background-color: $bg-color-btn-hover;
        cursor: pointer;
     }
