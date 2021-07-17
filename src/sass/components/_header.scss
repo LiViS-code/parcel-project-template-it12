@@ -6,6 +6,7 @@
   background-size: 346px 344px;
   background-repeat: no-repeat;
   background-position: 80% 50%;
+ padding:0 20px; 
 }
 .header__logo {
   padding: 6px;
@@ -56,10 +57,8 @@
   position: absolute;
   background: rgba(255, 184, 202, 1);
   border: 0;
-  width: 20px;
-  height: 12px;
   fill: #d41443;
-  top: 25px;
+  top: 22px;
   right: 20px;
   &:focus,
   &:hover {
@@ -95,14 +94,6 @@ color:$title-text-color;
 }
 }
 
-.hero {
-  // position: relative;
- background-image: url(../images/hero_ellipse538pink.svg);
- background-size: 346px 344px;
- background-repeat: no-repeat;
- background-position: 80% 20%;
-}
-
 .hero__img-icecream {
   position: absolute;
   bottom: 0;
@@ -118,7 +109,6 @@ color:$title-text-color;
   position: absolute;
   width: 218px;
   height: 106px;
-  left: 20px;
   bottom: 160px;
   color: $main-text-color;
   font-family: $title-font;
@@ -139,7 +129,6 @@ color:$title-text-color;
   position: absolute;
   background-color: $title-text-color;
   padding: 7px 13px;
-  left: 20px;
   bottom: 140px;
   font-size: 8px;
   line-height: 1.25;
@@ -151,7 +140,7 @@ color:$title-text-color;
   }
 
   &--white {
-    left: 93px;
+    left: 90px;
     color: $title-text-color;
     background-color: $main-text-color;
     &:focus,

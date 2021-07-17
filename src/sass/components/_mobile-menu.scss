@@ -16,12 +16,10 @@
    .menu-container.is-open{
       transform: translateX(0);
     }
-    .menu-toggle-close{
+    .menu-toggle-close {
        position: absolute;
        background:inherit;
-       border: 0;
-       width: 20px;
-       height: 12px;
+        border: 0;
        fill:$main-text-color;
        top: 20px;
        right: 30px;
