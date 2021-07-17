@@ -3,24 +3,146 @@
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
  */
-body {
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+a:hover, a:focus {
+  color: #d41443;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+label,
+input,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.place-of-sale__container {
+  padding: 43px 20px;
+  color: #907e82;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.place-of-sale__title {
+  padding: 0 16px;
+  margin-bottom: 25px;
+  display: inline-block;
   font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
+  text-transform: uppercase;
+  background-color: #f0d1a5;
+}
+
+.place-of-sale__title--other-background-color {
+  background-color: #c2e297;
+}
+
+.place-of-sale__city {
+  margin-bottom: 10px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.place-of-sale__text {
+  margin-bottom: 25px;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+}
+
+.place-of-sale__work-schedule-item :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.place-of-sale__working-days {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #000000;
+}
+
+.place-of-sale__working-hours {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.place-of-sale__contact-link {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: #ffffff;
+  color: #907e82;
 }
 
-@media screen and (min-width: 320px) {
-  body {
-    overflow-x: hidden;
-  }
+.place-of-sale__work-schedule-list {
+  margin-bottom: 25px;
+  padding: 25px 0;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.sale-address-list__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.buttons-list {
+  margin-bottom: 113px;
+}
+
+.buttons-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons-list__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .media-list {
@@ -43,5 +165,4 @@ img {
   display: inline-flex;
   border-radius: 50%;
 }
-
 /*# sourceMappingURL=main.css.map */
