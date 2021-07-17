@@ -1,8 +1,17 @@
-
 $main-text-color: #ffffff;
 $second-text-color: #212121;
-$title-text-color: #D41443;
+$title-text-color: #d41443;
 $main-font: 'DM Sans', sans-serif;
-$title-font:'Titan One', cursive;
-$bg-color-main: #FFF5F6;;
-$bg-color-btn-hover: #ECEBEB;
+$title-font: 'Titan One', cursive;
+$bg-color-main: #fff5f6;
+$bg-color-btn-hover: #ecebeb;
+
+$accent-color: #d41443;
+$lable-pink-color: #ffa5ba;
+$product1-card-color: #ffb8ca;
+$product2-card-color: #f0d1a5;
+$product3-card-color: #c2e297;
+
+// переходы
+$transition-duration: 250ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);

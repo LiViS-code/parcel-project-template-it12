@@ -4,9 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import "utils/variables";
-@import "utils/breakpoints";
-@import "utils/base";
-@import "utils/mixin";
-@import "components/advantages";
-/*@import "components/gallery";*/
+@import './utils/utils-module';
+@import './base/baze-module';
+@import './layout/layuot-module';
+@import './components/components-module';

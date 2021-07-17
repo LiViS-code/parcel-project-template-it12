@@ -1,5 +1,75 @@
-<header>
-<h1>
-   Це наш заголовок
-</h1>
+<header class="header">
+      <div class="container">
+         <div class="logo-nav__container">
+            <a class="header__logo" href="">
+        <img 
+        srcset="/images/logoPNG.png 1x, /images/logoPNG_2x.png 2x"
+        src="/images/logoPNG.png"
+        width="199"
+        height="50"
+        alt="logo"
+        ></a>
+
+        <nav class="header__nav">
+         <ul class="header__list">
+            <li class="header__item">
+               <a class="header__link header__link--red" href="">Home</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="">About us</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="">How it’s made?</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="">Our products</a>
+            </li>
+            <li class="header__item">
+               <a class="header__link" href="">Contact</a>
+            </li>
+         </ul>
+       
+        </nav>   
+        <button class="header__button" type="button" data-modal-open>
+       Buy now
+      <svg class="menu__button-icon" width="12" height="16">
+        <use href="./images/sprite.svg#icon-next_arrow_icon_131519"></use>
+      </svg>
+    </button>
+      </div>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+     >
+        <svg width="20" height="15">
+           <use href="/images/sprite.svg#icon-menu_24px"></use>
+        </svg>
+     </button>
+   
+ 
+       <section class="hero">
+        
+     <img class="hero__img-icecream"
+     srcset="/images/hero_ice_cream_1x.png 1x, /images/hero_ice_cream_2x.png 2x"
+     src="/images/hero_ice_cream_1x.png"
+        width="171"
+        height="410"
+        alt="icecream"
+        >
+        <h1 class="hero__main-title">ice cream
+         made with <span class="hero__main-title--red">passion</span>
+       </h1>
+       <div class="hero__button-container">
+       <a href="" class="hero__button">
+         Products
+       </a>
+       <a href="" class="hero__button hero__button--white">
+         How it’s made?
+       </a>
+      </div>
+      
+       </section> 
+  </div>
 </header>
+
