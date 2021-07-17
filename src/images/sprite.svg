@@ -1,5 +1,14 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-advantages1" viewBox="0 0 21 32">
+<path d="M0.001 0h21.12v32h-21.12z"></path>
+</symbol>
+<symbol id="icon-advantages2" viewBox="0 0 32 32">
+<path d="M0 0h32v32h-32z"></path>
+</symbol>
+<symbol id="icon-advantages3" viewBox="0 0 28 32">
+<path d="M0.003 0h28.16v32h-28.16z"></path>
+</symbol>
 <symbol id="icon-footer_social_facebook" viewBox="0 0 32 32">
 <path fill="#fea5bb" style="fill: var(--color1, #fea5bb)" d="M16.004 32.008c8.839 0 16.004-7.165 16.004-16.004s-7.165-16.004-16.004-16.004-16.004 7.165-16.004 16.004 7.165 16.004 16.004 16.004z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M20.451 15.985h-2.611v9.621h-3.956v-9.621h-1.881v-3.38h1.881v-2.188c0-1.565 0.739-4.015 3.992-4.015l2.93 0.012v3.282h-2.126c-0.348 0-0.839 0.176-0.839 0.923v1.989h2.956l-0.346 3.378z"></path>

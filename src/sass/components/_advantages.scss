@@ -1,37 +1,59 @@
+.container {
+  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 5px solid rgb(153, 245, 67);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+.ul {
+  list-style: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 .section-advantages{
 outline: 1px solid red;
 max-width: 1280px;
 margin-left: 20px;
-margin-right: 50px;
+margin-right: 20px;
+padding-top: 39px;
 background-color: #FFF5F6;
 color: black;
 
 }
 
 .section-advantages__icon{
-    fill: blueviolet;
-    color: chartreuse;
-    background-color: crimson;
+  fill: purple; 
 }
 
-/*добавление фоновых картинок через псевдоелементы
-.advantages-list .item::before{
-content: "";
-display: block;
-margin-bottom: 30px;
-height: 120px;
-background-color: var(--background-color-lignt-blue);
-background-size: 70px 70px ;
-background-repeat: no-repeat;
-background-position: center;
-border-radius: 4px;
+.section-advantages__title{
+  color: $title-text-color;
+  font: $title-font;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+
 }
-.advantages-list .item:nth-child(1)::before{
-  background-image: url(../imeges/attention.svg);
+
+.section-advantages__discription{
+
 }
-.advantages-list .item:nth-child(2)::before{
-  background-image: url(../imeges/punctuality.svg);
-}
-.advantages-list .item:nth-child(3)::before{
-  background-image: url(../imeges/planning.svg);
-}*/
+
