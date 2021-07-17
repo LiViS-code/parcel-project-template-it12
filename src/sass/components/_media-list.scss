@@ -1,0 +1,18 @@
+.media-list {
+  display: flex;
+  margin-left: 147px;
+  margin-bottom: 46px;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+  }
+
+  &__link {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,10 @@
+.buttons-list {
+  margin-bottom: 113px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
