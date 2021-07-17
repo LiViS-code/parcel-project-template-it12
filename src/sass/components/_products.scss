@@ -17,7 +17,7 @@ p {
 
 .product__item {
   width: 280px;
-  height: 598px;
+  height: 485px;
   border-radius: 24px;
 
   display: flex;
@@ -25,13 +25,11 @@ p {
   align-items: center;
 
   padding-top: 161px;
-
   &:not(:last-child) {
-    margin-bottom: 17px;
+    margin-bottom: 130px;
   }
-
   &::before {
-    background-image: url(../../images/products1_1x.png);
+    background-image: url(../images/products1_1x.png);
   }
 }
 .product__item--pink {
