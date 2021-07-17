@@ -22,4 +22,26 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.media-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 147px;
+  margin-bottom: 46px;
+}
+
+.media-list__item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.media-list__link {
+  width: 32px;
+  height: 32px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=main.css.map */
