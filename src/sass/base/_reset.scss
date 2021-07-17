@@ -1,0 +1,37 @@
+// обнуляем стили для ссылок на страничках
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color $transition-duration $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+// обнуляем стиль для заголовков
+.title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+// обнуляем стиль для параграфов
+p {
+  margin: 0;
+}
+
+// обнуляем стиль списков сайта
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// обнуляем стили для элементов формы
+label,
+input,
+form {
+  margin: 0;
+  padding: 0;
+}
