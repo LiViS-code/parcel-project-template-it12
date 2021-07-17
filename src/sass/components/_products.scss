@@ -43,6 +43,12 @@ p {
 
   margin-bottom: 31px;
 }
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .product__item {
   width: 280px;
   height: 485px;
