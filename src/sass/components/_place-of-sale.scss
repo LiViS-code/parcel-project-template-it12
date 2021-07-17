@@ -1,0 +1,92 @@
+// места продаж
+.place-of-sale {
+  &__container {
+    padding: 43px 20px;
+    color: #907e82;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+  }
+
+  // название места продажи
+  &__title {
+    padding: 0 16px;
+    margin-bottom: 25px;
+    display: inline-block;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    text-align: center;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    text-transform: uppercase;
+    background-color: #f0d1a5;
+
+    &--other-background-color {
+      background-color: #c2e297;
+    }
+  }
+
+  &__city {
+    margin-bottom: 10px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #907e82;
+  }
+
+  &__work-schedule-item {
+    :not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__working-days {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #000000;
+  }
+
+  &__working-hours {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ffa5ba;
+  }
+
+  &__contact-link {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #907e82;
+  }
+
+  &__work-schedule-list {
+    margin-bottom: 25px;
+    padding: 25px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
