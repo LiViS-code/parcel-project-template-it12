@@ -250,6 +250,7 @@ form {
 
 .hero__button:focus, .hero__button:hover {
   cursor: pointer;
+  color: #ffffff;
 }
 
 .hero__button--white {
@@ -259,6 +260,7 @@ form {
 }
 
 .hero__button--white:focus, .hero__button--white:hover {
+  color: #d41443;
   background-color: #ecebeb;
   cursor: pointer;
 }
@@ -340,6 +342,46 @@ form {
 
 .menu__item:not(:last-child) {
   margin-bottom: 23px;
+}
+
+.section-advantages {
+  max-width: 1280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 39px;
+  padding-right: 80px;
+  padding-bottom: 97px;
+  padding-left: 10px;
+  background-color: #FFF5F6;
+  color: black;
+}
+
+.section-advantages__card {
+  margin-bottom: 38px;
+}
+
+.section-advantages__list {
+  margin-bottom: -38px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 16px;
+}
+
+.section-advantages__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  margin-bottom: 16px;
+}
+
+.section-advantages__description {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .buttons-list {
