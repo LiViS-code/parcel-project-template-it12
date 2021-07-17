@@ -82,4 +82,8 @@ p {
   border-radius: 50%;
   font-family: $main-font;
   border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
