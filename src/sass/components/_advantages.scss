@@ -1,0 +1,37 @@
+.section-advantages{
+outline: 1px solid red;
+max-width: 1280px;
+margin-left: 20px;
+margin-right: 50px;
+background-color: #FFF5F6;
+color: black;
+
+}
+
+.section-advantages__icon{
+    fill: blueviolet;
+    color: chartreuse;
+    background-color: crimson;
+}
+
+/*добавление фоновых картинок через псевдоелементы
+.advantages-list .item::before{
+content: "";
+display: block;
+margin-bottom: 30px;
+height: 120px;
+background-color: var(--background-color-lignt-blue);
+background-size: 70px 70px ;
+background-repeat: no-repeat;
+background-position: center;
+border-radius: 4px;
+}
+.advantages-list .item:nth-child(1)::before{
+  background-image: url(../imeges/attention.svg);
+}
+.advantages-list .item:nth-child(2)::before{
+  background-image: url(../imeges/punctuality.svg);
+}
+.advantages-list .item:nth-child(3)::before{
+  background-image: url(../imeges/planning.svg);
+}*/
