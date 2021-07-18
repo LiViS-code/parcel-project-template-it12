@@ -458,7 +458,7 @@ p {
   display: block;
   width: 249px;
   height: 252px;
-  background-image: url("../images/products2_1x.png");
+  background-image: url(../images/products2_1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -479,7 +479,7 @@ p {
   display: block;
   width: 249px;
   height: 252px;
-  background-image: url("../images/products3_1x.png");
+  background-image: url(../images/products3_1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -501,8 +501,15 @@ p {
 .product__header::after {
   content: '';
   position: absolute;
+  top: 30px;
   left: 0;
-  bottom: 0;
+  background-image: url("../images/icon-three-dots.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  width: 26px;
+  height: 6px;
 }
 
 .product__description {
