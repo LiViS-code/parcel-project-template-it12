@@ -1,0 +1,36 @@
+// стилизация кнопок проекта
+.btn {
+  color: $accent-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3125;
+  background-color: $bg-color-btn;
+  border-radius: 22px;
+  border: none;
+  transition: color $transition-duration $timing-function,
+    background-color $transition-duration $timing-function;
+
+  // обычная кнопка
+  &__regular {
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $bg-color-btn-hover;
+    }
+  }
+
+  // акцентированная кнопка
+  &__accent {
+    color: $main-text-color;
+    background-color: $accent-color;
+  }
+
+  // фиксированные размеры для кнопок в контактах
+  &--fixed-size-locations,
+  &--fixed-size-franchise {
+    width: 161px;
+    height: 44px;
+  }
+}
