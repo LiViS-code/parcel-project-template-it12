@@ -632,7 +632,6 @@ form {
   .section-gallery {
     background-image: url("../images/gallery_2x.jpg");
   }
-
 }
 
 .footer-section {
@@ -878,32 +877,34 @@ form {
 }
 
 .btn--fixed-size-locations, .btn--fixed-size-franchise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 161px;
   height: 44px;
 }
 
+.btn__icon {
+  margin-left: 8px;
+  fill: currentColor;
+}
+
 .section-advantages {
-
   padding-top: 39px;
   padding-bottom: 97px;
-
-  max-width: 1280px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 39px;
-  padding-right: 80px;
-  padding-bottom: 97px;
-  padding-left: 10px;
-
   background-color: #FFF5F6;
   color: black;
 }
 
 .section-advantages__card {
   margin-bottom: 38px;
-
   padding-right: 80px;
-
 }
 
 .section-advantages__list {
@@ -925,16 +926,10 @@ form {
 }
 
 .section-advantages__description {
-
   font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.7;
   letter-spacing: 0em;
-
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.7;
-
 }
 /*# sourceMappingURL=main.css.map */
