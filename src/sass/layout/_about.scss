@@ -1,10 +1,11 @@
 .about {
   background-color: $bg-color-main;
-  padding: 125px 50px 39px;
+  padding-top: 125px;
+  padding-bottom: 39px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 320px 133px;
   background-image: url(../images/about_background.png);
-  background-position: 0 80%;
+  background-position: 0 85%;
 }
 .about__pre-title {
   margin-bottom: 15px;
@@ -23,6 +24,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $title-text-color;
+}
+.about__image {
+  margin: 0 auto 46px;
+  width: 280px;
+}
+.about__container {
+  width: 220px;
+  margin: 0 auto;
 }
 .about__text {
   font-family: DM Sans;
