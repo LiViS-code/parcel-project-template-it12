@@ -49,9 +49,9 @@
   &:not(:last-child) {
     margin-bottom: 130px;
   }
-  // &::before {
-  //   background-image: url(../../images/products1_1x.png);
-  // }
+  &::before {
+    background-image: url(../images/products1_1x.png);
+  }
 }
 .product__item--pink {
   background-color: $product1-card-color;
@@ -82,7 +82,7 @@
 
     left: 0;
     bottom: 0;
-    // background-image: url(./images/group_4.svg);
+    background-image: url(../images/group_4.svg);
   }
 }
 .product__description {
