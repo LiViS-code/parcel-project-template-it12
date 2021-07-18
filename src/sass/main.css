@@ -344,21 +344,16 @@ form {
   margin-bottom: 23px;
 }
 
-
 .section-advantages {
-  max-width: 1280px;
-  margin-left: 20px;
-  margin-right: 20px;
   padding-top: 39px;
-  padding-right: 80px;
   padding-bottom: 97px;
-  padding-left: 10px;
   background-color: #FFF5F6;
   color: black;
 }
 
 .section-advantages__card {
   margin-bottom: 38px;
+  padding-right: 80px;
 }
 
 .section-advantages__list {
@@ -380,9 +375,25 @@ form {
 }
 
 .section-advantages__description {
+  font-family: "DM Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 1.7;
+  letter-spacing: 0em;
+}
+
+.section-gallery {
+  height: 420px;
+  background-image: url("../images/gallery_1x.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-gallery {
+    background-image: url("../images/gallery_2x.jpg");
+  }
+}
 
 .footer-section {
   padding-bottom: 43px;
@@ -629,5 +640,43 @@ form {
 .btn--fixed-size-locations, .btn--fixed-size-franchise {
   width: 161px;
   height: 44px;
+}
+
+.section-advantages {
+  padding-top: 39px;
+  padding-bottom: 97px;
+  background-color: #FFF5F6;
+  color: black;
+}
+
+.section-advantages__card {
+  margin-bottom: 38px;
+  padding-right: 80px;
+}
+
+.section-advantages__list {
+  margin-bottom: -38px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 16px;
+}
+
+.section-advantages__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  margin-bottom: 16px;
+}
+
+.section-advantages__description {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0em;
 }
 /*# sourceMappingURL=main.css.map */
