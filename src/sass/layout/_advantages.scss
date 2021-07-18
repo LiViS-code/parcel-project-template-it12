@@ -1,15 +1,11 @@
 .section-advantages{
-max-width: 1280px;
-margin-left: 20px;
-margin-right: 20px;
 padding-top: 39px;
-padding-right: 80px;
 padding-bottom: 97px;
-padding-left: 10px;
 background-color: #FFF5F6;
 color: black;
   &__card{
     margin-bottom: 38px;
+    padding-right: 80px;
   }
   &__list{
     margin-bottom: -38px;
@@ -27,8 +23,10 @@ color: black;
     margin-bottom: 16px;
   }
   &__description{
+    font-family: $main-font;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
+    letter-spacing: 0em;
   }
 }
