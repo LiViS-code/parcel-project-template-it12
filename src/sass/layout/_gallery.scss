@@ -1,0 +1,14 @@
+
+.section-gallery{
+    height: 420px;
+    background-image: url('../images/gallery_1x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+@media
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .section-gallery {
+    background-image: url('../images/gallery_2x.jpg');        }
+}
