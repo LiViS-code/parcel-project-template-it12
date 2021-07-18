@@ -3,11 +3,6 @@
 }
 
 .description {
-  &__container {
-    padding: 0 66px 0 20px;
-    margin-bottom: 43px;
-  }
-
   &__pre-title {
     margin-bottom: 17px;
     font-family: $title-font;
@@ -17,6 +12,12 @@
     line-height: 1.6667;
     text-transform: uppercase;
     color: $lable-pink-color;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 26px;
+      line-height: 1.1538;
+      letter-spacing: 0.04em;
+    }
   }
 
   &__accent-title {
@@ -28,12 +29,17 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $accent-color;
+
+    @media screen and (min-width: $mobile) {
+      font-size: 48px;
+      line-height: 1.1458;
+      letter-spacing: 0.06em;
+    }
   }
 }
 
 .contact-footer {
   &__text {
-    padding-right: 20px;
     display: flex;
     justify-content: flex-end;
     font-family: $main-font;
@@ -42,6 +48,11 @@
     font-size: 12px;
     line-height: 1.86;
     color: #000000;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
   }
 
   &__link {
@@ -53,7 +64,6 @@
   &__text {
     margin: 0 auto;
     display: block;
-    width: 150px;
     font-family: $main-font;
     font-style: normal;
     font-weight: bold;
@@ -61,5 +71,9 @@
     line-height: 1.52;
     text-align: center;
     color: #907e82;
+
+    @media screen and (min-width: $min-mobile) and (max-width: $mobile - 1) {
+      width: 150px;
+    }
   }
 }

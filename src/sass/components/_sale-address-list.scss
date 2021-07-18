@@ -1,8 +1,25 @@
 // список адресов продаж
 .sale-address-list {
+  @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
+    margin-bottom: 54px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 81px;
+    display: flex;
+  }
+
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 20px;
+    @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
     }
   }
 }

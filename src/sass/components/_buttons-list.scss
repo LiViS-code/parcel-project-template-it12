@@ -1,9 +1,23 @@
 .buttons-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+
   &__item {
     display: flex;
     justify-content: center;
-    &:not(:last-child) {
-      margin-bottom: 10px;
+
+    @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      &:not(:last-child) {
+        margin-right: 15px;
+      }
     }
   }
 }

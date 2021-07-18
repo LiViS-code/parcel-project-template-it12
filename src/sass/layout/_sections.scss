@@ -15,5 +15,8 @@
   &__copyright {
     padding: 22px 0 25px;
     border-top: 1px solid #e1e1e1;
+    @media screen and (min-width: $mobile) {
+      padding: 10px 0;
+    }
   }
 }

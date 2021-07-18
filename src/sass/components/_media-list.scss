@@ -1,7 +1,6 @@
 .media-list {
   display: flex;
   justify-content: flex-end;
-  padding-right: 20px;
   margin-bottom: 46px;
 
   &__item {
@@ -19,6 +18,11 @@
     border-radius: 50%;
     color: $main-text-color;
     background-color: $bg-color-media-link;
+
+    @media screen and (min-width: $tablet) {
+      width: 34px;
+      height: 34px;
+    }
 
     &:hover,
     &:focus,
