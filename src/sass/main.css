@@ -345,6 +345,22 @@ form {
 }
 
 
+.about {
+  background-color: #fff5f6;
+  padding: 125px 50px 39px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/about_background.png);
+  background-position: 0 80%;
+}
+
+.about__pre-title {
+  margin-bottom: 15px;
+  font-family: "Titan One", cursive;
+  font-size: 18px;
+  line-height: 1.167;
+  text-align: center;
+
 .section-advantages {
   max-width: 1280px;
   margin-left: 20px;
@@ -384,6 +400,7 @@ form {
   font-weight: 700;
   line-height: 1.7;
 
+
 .footer-section {
   padding-bottom: 43px;
 }
@@ -400,9 +417,18 @@ form {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.6667;
+
   text-transform: uppercase;
   color: #ffa5ba;
 }
+
+
+.about__title {
+  margin-bottom: 26px;
+  font-family: "Titan One", cursive;
+  font-size: 34px;
+  line-height: 1.147;
+  text-align: center;
 
 .description__accent-title {
   font-family: "Titan One", cursive;
@@ -411,9 +437,55 @@ form {
   font-size: 34px;
   line-height: 1.147;
   letter-spacing: 0.04em;
+
   text-transform: uppercase;
   color: #d41443;
 }
+
+
+.about__text {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+  margin-bottom: 47px;
+}
+
+.about__text--black-color {
+  color: #000000;
+}
+
+.about__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 176px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: #d41443;
+}
+
+.about__button:focus, .about__button:hover {
+  background-color: #ecebeb;
+  cursor: pointer;
+}
+
+.about__icon {
+  fill: currentColor;
+  margin-left: 20px;
 
 .contact-footer__text {
   padding-right: 20px;
@@ -451,6 +523,7 @@ form {
   line-height: 1.52;
   text-align: center;
   color: #907e82;
+
 }
 
 .buttons-list {
@@ -603,6 +676,47 @@ form {
   margin-bottom: 20px;
 }
 
+
+
+.section-advantages {
+  max-width: 1280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 39px;
+  padding-right: 80px;
+  padding-bottom: 97px;
+  padding-left: 10px;
+  background-color: #FFF5F6;
+  color: black;
+}
+
+.section-advantages__card {
+  margin-bottom: 38px;
+}
+
+.section-advantages__list {
+  margin-bottom: -38px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 16px;
+}
+
+.section-advantages__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  margin-bottom: 16px;
+}
+
+.section-advantages__description {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+
 .btn {
   color: #d41443;
   font-family: "DM Sans", sans-serif;
@@ -629,5 +743,6 @@ form {
 .btn--fixed-size-locations, .btn--fixed-size-franchise {
   width: 161px;
   height: 44px;
+
 }
 /*# sourceMappingURL=main.css.map */
