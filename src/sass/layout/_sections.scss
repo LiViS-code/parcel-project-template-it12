@@ -1,9 +1,22 @@
 .section {
   &__sale-address {
+    padding-bottom: 113px;
     background: linear-gradient(to bottom, $bg-color-light 84px, $bg-color-main 1px);
   }
 
   &__footer {
     background-color: $bg-color-main;
+  }
+
+  &__media {
+    padding-bottom: 43px;
+  }
+
+  &__copyright {
+    padding: 22px 0 25px;
+    border-top: 1px solid #e1e1e1;
+    @media screen and (min-width: $mobile) {
+      padding: 10px 0;
+    }
   }
 }
