@@ -344,6 +344,153 @@ form {
   margin-bottom: 23px;
 }
 
+.section-products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.product__lable {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+
+.product__title {
+  font-family: "Titan One", cursive;
+  color: #d41443;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.product__item {
+  width: 280px;
+  height: 485px;
+  border-radius: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 161px;
+}
+
+.product__item:not(:last-child) {
+  margin-bottom: 130px;
+}
+
+.product__item--pink {
+  background-color: #ffb8ca;
+}
+
+.product__item--pink::before {
+  background-image: url(../images/products1_1x.png);
+}
+
+.product__item--brown {
+  background-color: #f0d1a5;
+}
+
+.product__item--brown::before {
+  background-image: url(../images/products2_1x.png);
+}
+
+.product__item--green {
+  background: #c2e297;
+}
+
+.product__item--green::before {
+  background-image: url(../images/products3_1x.png);
+}
+
+.product__header {
+  font-family: "Titan One", cursive;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 66px;
+  position: relative;
+}
+
+.product__header::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.product__description {
+  font-family: "DM Sans", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 152%;
+  width: 200px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.product__icon {
+  fill: #d41443;
+}
 
 .about {
   background-color: #fff5f6;
@@ -360,68 +507,9 @@ form {
   font-size: 18px;
   line-height: 1.167;
   text-align: center;
-
-.section-advantages {
-  max-width: 1280px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-top: 39px;
-  padding-right: 80px;
-  padding-bottom: 97px;
-  padding-left: 10px;
-  background-color: #FFF5F6;
-  color: black;
-}
-
-.section-advantages__card {
-  margin-bottom: 38px;
-}
-
-.section-advantages__list {
-  margin-bottom: -38px;
-}
-
-.section-advantages__icon {
-  margin-bottom: 16px;
-}
-
-.section-advantages__title {
-  color: #d41443;
-  font-family: "Titan One", cursive;
-  font-style: normal;
-  font-size: 36px;
-  letter-spacing: 0.04em;
-  line-height: 1.145;
-  margin-bottom: 16px;
-}
-
-.section-advantages__description {
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 1.7;
-
-
-.footer-section {
-  padding-bottom: 43px;
-}
-
-.description__container {
-  padding: 0 66px 0 20px;
-  margin-bottom: 43px;
-}
-
-.description__pre-title {
-  margin-bottom: 17px;
-  font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.6667;
-
   text-transform: uppercase;
   color: #ffa5ba;
 }
-
 
 .about__title {
   margin-bottom: 26px;
@@ -429,19 +517,9 @@ form {
   font-size: 34px;
   line-height: 1.147;
   text-align: center;
-
-.description__accent-title {
-  font-family: "Titan One", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 34px;
-  line-height: 1.147;
-  letter-spacing: 0.04em;
-
   text-transform: uppercase;
   color: #d41443;
 }
-
 
 .about__text {
   font-family: DM Sans;
@@ -486,6 +564,78 @@ form {
 .about__icon {
   fill: currentColor;
   margin-left: 20px;
+}
+
+.section-advantages {
+  max-width: 1280px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 39px;
+  padding-right: 80px;
+  padding-bottom: 97px;
+  padding-left: 10px;
+  background-color: #FFF5F6;
+  color: black;
+}
+
+.section-advantages__card {
+  margin-bottom: 38px;
+}
+
+.section-advantages__list {
+  margin-bottom: -38px;
+}
+
+.section-advantages__icon {
+  margin-bottom: 16px;
+}
+
+.section-advantages__title {
+  color: #d41443;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-size: 36px;
+  letter-spacing: 0.04em;
+  line-height: 1.145;
+  margin-bottom: 16px;
+}
+
+.section-advantages__description {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.footer-section {
+  padding-bottom: 43px;
+}
+
+.description__container {
+  padding: 0 66px 0 20px;
+  margin-bottom: 43px;
+}
+
+.description__pre-title {
+  margin-bottom: 17px;
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.6667;
+  text-transform: uppercase;
+  color: #ffa5ba;
+}
+
+.description__accent-title {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
 
 .contact-footer__text {
   padding-right: 20px;
@@ -523,7 +673,6 @@ form {
   line-height: 1.52;
   text-align: center;
   color: #907e82;
-
 }
 
 .buttons-list {
@@ -676,7 +825,33 @@ form {
   margin-bottom: 20px;
 }
 
+.btn {
+  color: #d41443;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3125;
+  background-color: #ffffff;
+  border-radius: 22px;
+  border: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.btn__regular:hover, .btn__regular:focus, .btn__regular:active {
+  background-color: #ecebeb;
+}
+
+.btn__accent {
+  color: #ffffff;
+  background-color: #d41443;
+}
+
+.btn--fixed-size-locations, .btn--fixed-size-franchise {
+  width: 161px;
+  height: 44px;
+}
 
 .section-advantages {
   max-width: 1280px;
@@ -716,33 +891,5 @@ form {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.7;
-
-.btn {
-  color: #d41443;
-  font-family: "DM Sans", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.3125;
-  background-color: #ffffff;
-  border-radius: 22px;
-  border: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn__regular:hover, .btn__regular:focus, .btn__regular:active {
-  background-color: #ecebeb;
-}
-
-.btn__accent {
-  color: #ffffff;
-  background-color: #d41443;
-}
-
-.btn--fixed-size-locations, .btn--fixed-size-franchise {
-  width: 161px;
-  height: 44px;
-
 }
 /*# sourceMappingURL=main.css.map */
