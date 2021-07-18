@@ -49,18 +49,24 @@
   &:not(:last-child) {
     margin-bottom: 130px;
   }
+}
+.product__item--pink {
+  background-color: $product1-card-color;
   &::before {
     background-image: url(../images/products1_1x.png);
   }
 }
-.product__item--pink {
-  background-color: $product1-card-color;
-}
 .product__item--brown {
   background-color: $product2-card-color;
+  &::before {
+    background-image: url(../images/products2_1x.png);
+  }
 }
 .product__item--green {
   background: $product3-card-color;
+  &::before {
+    background-image: url(../images/products3_1x.png);
+  }
 }
 .product__header {
   font-family: $title-font;
@@ -82,7 +88,6 @@
 
     left: 0;
     bottom: 0;
-    background-image: url(../images/group_4.svg);
   }
 }
 .product__description {
