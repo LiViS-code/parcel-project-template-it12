@@ -17,6 +17,7 @@
         "layout/_containers.scss",
         "layout/_header.scss",
         "layout/_mobile-menu.scss",
+        "layout/_advantages.scss",
         "layout/_footer.scss",
         "components/_components-module.scss",
         "components/_buttons-list.scss",
