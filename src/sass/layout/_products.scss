@@ -52,20 +52,41 @@
 }
 .product__item--pink {
   background-color: $product1-card-color;
+  position: relative;
   &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    content: '';
     background-image: url(../images/products1_1x.png);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .product__item--brown {
   background-color: $product2-card-color;
   &::before {
-    background-image: url(../images/products2_1x.png);
+    content: '';
+    background-image: url('../images/products2_1x.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .product__item--green {
   background: $product3-card-color;
   &::before {
-    background-image: url(../images/products3_1x.png);
+    content: '';
+    background-image: url('../images/products3_1x.png');
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 .product__header {
