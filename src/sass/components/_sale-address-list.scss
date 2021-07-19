@@ -21,5 +21,11 @@
         margin-right: 20px;
       }
     }
+
+    @media screen and (min-width: $desktop) {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
   }
 }
