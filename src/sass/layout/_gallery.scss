@@ -1,9 +1,27 @@
 
 .section-gallery{
-    height: 420px;
+    display: block;
+    height: 122px;
     background-image: url('../images/gallery_1x.jpg');
     background-size: contain;
     background-repeat: no-repeat;  
+   /* background-size: cover;*/
+    /*background-position: center;*/
+      @media screen and (min-width: 360px) {
+        height: 137px;
+    }
+      @media screen and (min-width: 410px) {
+        height: 156px;
+    }
+      @media screen and (min-width: 460px) {
+        height: 175px;
+    }
+      @media screen and (min-width: $tablet) {
+        height: 264px;
+      }
+      @media screen and (min-width: $desktop) {
+        height: 430px;
+      }
 }
 
 @media

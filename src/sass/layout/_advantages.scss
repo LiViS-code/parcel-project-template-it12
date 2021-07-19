@@ -1,17 +1,26 @@
 .section-advantages{
-padding-top: 39px;
 padding-bottom: 97px;
-background-color: #FFF5F6;
-color: black;
+padding-left: 10px;
+background-color: $bg-color-main;
+color: $second-text-color;
+@media screen and (min-width: $desktop) {
+padding-bottom: 139px;
+}
   &__card{
     margin-bottom: 38px;
     padding-right: 80px;
   }
   &__list{
     margin-bottom: -38px;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
   &__icon{
       margin-bottom: 16px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 36px;
+      }
   }
   &__title{
     color: $title-text-color;
@@ -21,6 +30,9 @@ color: black;
     letter-spacing: 0.04em;
     line-height: 1.145;
     margin-bottom: 16px;
+    @media screen and (min-width: $desktop) {
+      font-size: 56px;
+    }
   }
   &__description{
     font-family: $main-font;
@@ -28,5 +40,11 @@ color: black;
     font-weight: 700;
     line-height: 1.7;
     letter-spacing: 0em;
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 }
