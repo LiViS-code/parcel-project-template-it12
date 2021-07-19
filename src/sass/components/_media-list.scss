@@ -1,7 +1,9 @@
 .media-list {
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 46px;
+  @media screen and (min-width: $min-mobile) and (max-width: $desktop - 1) {
+    margin-bottom: 46px;
+  }
 
   &__item {
     &:not(:last-child) {

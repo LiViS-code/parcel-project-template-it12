@@ -16,6 +16,10 @@
 
   &__sale-address {
     padding: 0 30px;
+
+    @media screen and (min-width: $desktop) {
+      padding: 0 100px;
+    }
   }
 
   &__description {
@@ -26,11 +30,22 @@
     @media screen and (min-width: $mobile) {
       width: 340px;
     }
+
+    @media screen and (min-width: $desktop) {
+      width: auto;
+      margin-bottom: 0;
+    }
   }
 
   &__media-list {
     @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
       padding-right: 20px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 }
