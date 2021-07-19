@@ -1,6 +1,7 @@
 .section-advantages{
 padding-top: 39px;
 padding-bottom: 97px;
+padding-left: 20px;
 background-color: #FFF5F6;
 color: black;
   &__card{
@@ -29,4 +30,7 @@ color: black;
     line-height: 1.7;
     letter-spacing: 0em;
   }
+}
+.title-display-none{
+  display: none;
 }
