@@ -19,4 +19,36 @@
       padding: 10px 0;
     }
   }
+  &__pre-title {
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    text-transform: uppercase;
+    color: $lable-pink-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: 1.154;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.133;
+    }
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: 34px;
+    line-height: 1.147;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title-text-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.146;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.138;
+    }
+  }
 }
