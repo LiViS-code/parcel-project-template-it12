@@ -121,6 +121,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.286;
+  transition: background-color $transition-duration $timing-function;
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: 1.313;
