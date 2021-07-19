@@ -1,0 +1,66 @@
+.section {
+  &__sale-address {
+    padding-bottom: 113px;
+    background: linear-gradient(to bottom, $bg-color-light 84px, $bg-color-main 1px);
+
+    @media screen and (min-width: $tablet) {
+      padding-bottom: 158px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 165px;
+    }
+  }
+
+  &__footer {
+    background-color: $bg-color-main;
+  }
+
+  &__media {
+    padding-bottom: 43px;
+
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 97px;
+    }
+  }
+
+  &__copyright {
+    padding: 22px 0 25px;
+    border-top: 1px solid #e1e1e1;
+    @media screen and (min-width: $mobile) {
+      padding: 10px 0;
+    }
+  }
+  &__pre-title {
+    font-family: $title-font;
+    font-size: 18px;
+    line-height: 1.167;
+    text-align: center;
+    text-transform: uppercase;
+    color: $lable-pink-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 26px;
+      line-height: 1.154;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 30px;
+      line-height: 1.133;
+    }
+  }
+  &__title {
+    font-family: $title-font;
+    font-size: 34px;
+    line-height: 1.147;
+    text-align: center;
+    text-transform: uppercase;
+    color: $title-text-color;
+    @media screen and (min-width: $tablet) {
+      font-size: 48px;
+      line-height: 1.146;
+    }
+    @media screen and (min-width: $desktop) {
+      font-size: 58px;
+      line-height: 1.138;
+    }
+  }
+}

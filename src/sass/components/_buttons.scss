@@ -30,7 +30,33 @@
   // фиксированные размеры для кнопок в контактах
   &--fixed-size-locations,
   &--fixed-size-franchise {
+    @include centeredFlex();
     width: 161px;
     height: 44px;
+  }
+
+  &--fixed-size-locations {
+    @media screen and (min-width: $tablet) {
+      width: 191px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 198px;
+    }
+  }
+
+  &--fixed-size-franchise {
+    @media screen and (min-width: $tablet) {
+      width: 174px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 180px;
+    }
+  }
+
+  &__icon {
+    margin-left: 8px;
+    fill: currentColor;
   }
 }

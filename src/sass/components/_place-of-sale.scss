@@ -1,7 +1,6 @@
 // места продаж
 .place-of-sale {
   &__container {
-    margin-bottom: 54px;
     padding: 43px 20px;
     color: #907e82;
     background-color: #ffffff;
@@ -17,13 +16,17 @@
     font-family: $main-font;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.86;
     text-align: center;
     letter-spacing: 0.04em;
     border-radius: 6px;
     text-transform: uppercase;
     background-color: #f0d1a5;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
 
     &--other-background-color {
       background-color: #c2e297;
@@ -49,6 +52,17 @@
     font-size: 12px;
     line-height: 18px;
     color: #907e82;
+  }
+
+  &__city,
+  &__text {
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__work-schedule-item {
