@@ -33,9 +33,6 @@
     display: flex;
     justify-content: center;
   }
-  /*  @media screen and (min-width: $desktop) {
-    width: 463px;
-  } */
 }
 .about__image {
   width: 280px;
@@ -47,7 +44,6 @@
   }
   @media screen and (min-width: $tablet) {
     width: 340px;
-    /* margin: 0 auto; */
   }
   @media screen and (min-width: $desktop) {
     width: 516px;

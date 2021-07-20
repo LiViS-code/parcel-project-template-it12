@@ -387,7 +387,7 @@
   fill: $main-text-color;
   top: 20px;
   right: 30px;
-
+  transition: fill $transition-duration $timing-function;
   &:focus,
   &:hover {
     fill: rgb(179, 235, 69);
