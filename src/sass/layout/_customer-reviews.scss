@@ -8,13 +8,30 @@
     font-size: 12px;
     line-height: 31px;
     color: #000000;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__sub-text {
     text-align: center;
     font-size: 14px;
-    line-height: 186%;
+    line-height: 1.86;
     color: #000000;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
   }
 
   &__icon {
