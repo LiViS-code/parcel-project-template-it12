@@ -1,7 +1,7 @@
 <section class="section section-products">
   <div class="container">
-    <p class="product__lable">100% natural</p>
-    <h2 class="title product__title">products</h2>
+    <p class="section__pre-title product__lable">100% natural</p>
+    <h2 class="section__title product__title">products</h2>
     <ul class="product">
       <li class="product__item product__item--pink">
         <h3 class="title product__header">ice cream</h3>
@@ -9,14 +9,26 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <button class="product__button">
+        <button class="product__button js-open-menu" type="button" data-menu-button>
           <svg class="product__icon" width="15px" height="15px">
-            <use href="./images/sprite.svg#icon-arrow-right"></use>
+            <use href="./images/sprite.svg#icon-arrow-right" class="product__svg"></use>
           </svg>
         </button>
+        <div class="product__overlay product__overlay--pink js-menu-container">
+          <button class="menu-toggle-close js-close-menu">
+            <svg width="18.67" height="18.67">
+              <use href="./images/sprite.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <h3 class="title product__header">ice cream</h3>
+          <p class="product__description product__overlay-text">
+            Want to have your cake and eat it too? With strawberry cheesecake ice cream mixed with a
+            thick graham cracker swirl, you can have it all – pants optional.
+          </p>
+        </div>
       </li>
       <li class="product__item product__item--brown">
-        <h3 class="title product__header">ice coffee</h3>
+        <h3 class="title product__header">iced coffee</h3>
         <p class="product__description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
@@ -26,6 +38,18 @@
             <use href="./images/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
+        <div class="product__overlay product__overlay--brown js-menu-container">
+          <button class="menu-toggle-close js-close-menu">
+            <svg width="18.67" height="18.67">
+              <use href="./images/sprite.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <h3 class="title product__header">iced coffee</h3>
+          <p class="product__description product__overlay-text">
+            Our dark, rich espresso combined with milk and served over ice. A perfect milk-forward
+            cooldown.
+          </p>
+        </div>
       </li>
       <li class="product__item product__item--green">
         <h3 class="title product__header">milkshakes</h3>
@@ -38,6 +62,18 @@
             <use href="./images/sprite.svg#icon-arrow-right"></use>
           </svg>
         </button>
+        <div class="product__overlay product__overlay--green js-menu-container">
+          <button class="menu-toggle-close js-close-menu">
+            <svg width="18.67" height="18.67">
+              <use href="./images/sprite.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <h3 class="title product__header">milkshakes</h3>
+          <p class="product__description product__overlay-text">
+            Cookie dough ice cream in a chocolate-swirled jar. Topped with whipped cream, chocolate
+            drizzle and murshmallows. Our most popular milkshake for a reason.
+          </p>
+        </div>
       </li>
     </ul>
   </div>
