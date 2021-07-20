@@ -42,8 +42,8 @@
   &__rule {
     padding-top: 3px;
     background: repeating-linear-gradient(
-      $bg-color-review,
-      $bg-color-review 29px,
+      transparent,
+      transparent 29px,
       $bg-color-line 30px,
       $bg-color-line 31px
     );
@@ -64,6 +64,12 @@
 
   &__contact-customer {
     padding: 0 54px;
+    margin-bottom: 30px;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    justify-content: center;
   }
 
   &__media {
