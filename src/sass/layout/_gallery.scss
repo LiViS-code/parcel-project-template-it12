@@ -1,33 +1,25 @@
 .section-gallery {
   margin-bottom: 80px;
   display: block;
-  height: 122px;
-  background-image: url('../images/gallery_1x.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100%;}
+  .gallery__picture{
+    object-fit: cover
+  }
 
   @media screen and (min-width: 360px) {
-    height: 137px;
+
   }
   @media screen and (min-width: 410px) {
-    height: 156px;
+
   }
   @media screen and (min-width: 460px) {
-    height: 175px;
+ 
   }
   @media screen and (min-width: $tablet) {
-    margin-bottom: 121px;
-    height: 264px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 123px;
-    height: 430px;
+   
   }
-}
 
-@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .section-gallery {
-    background-image: url('../images/gallery_2x.jpg');
-  }
-}
+
+
