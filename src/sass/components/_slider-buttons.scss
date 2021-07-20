@@ -1,0 +1,29 @@
+.slider-buttons {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 18px;
+    }
+  }
+
+  &__button {
+    width: 20px;
+    height: 20 px;
+    @include centeredFlex();
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: $accent-color;
+
+    &--grey {
+      color: $bg-color-btn-slider;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
