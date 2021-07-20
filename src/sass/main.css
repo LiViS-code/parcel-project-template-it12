@@ -350,10 +350,10 @@ form {
   padding: 6px;
   border-radius: 30px;
   margin-bottom: 255px;
-  -webkit-transition: -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__logo:hover, .header__logo:focus {
@@ -416,6 +416,8 @@ form {
   font-size: 16px;
   line-height: 1.312;
   color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__link:focus, .header__link:hover {
@@ -477,6 +479,8 @@ form {
       -ms-flex-pack: center;
           justify-content: center;
   color: #d41443;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header__button:focus, .header__button:hover {
@@ -607,8 +611,8 @@ form {
   bottom: 163px;
   color: #d41443;
   background-color: #ffffff;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button--white:focus, .hero__button--white:hover {
@@ -1327,7 +1331,9 @@ form {
   }
 }
 
-.product__overlay.is-open {
+.product1-menu-container.is-open,
+.product2-menu-container.is-open,
+.product3-menu-container.is-open {
   opacity: 1;
   pointer-events: all;
 }
@@ -1369,6 +1375,8 @@ form {
   fill: #ffffff;
   top: 20px;
   right: 30px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle-close:focus, .menu-toggle-close:hover {
@@ -1420,12 +1428,6 @@ form {
   }
 }
 
-.about__flex-container {
-  /*  @media screen and (min-width: $desktop) {
-    width: 463px;
-  } */
-}
-
 @media screen and (min-width: 768px) {
   .about__flex-container {
     display: -webkit-box;
@@ -1456,7 +1458,6 @@ form {
 @media screen and (min-width: 768px) {
   .about__image {
     width: 340px;
-    /* margin: 0 auto; */
   }
 }
 
@@ -1918,6 +1919,7 @@ form {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: auto;
   padding: 40px;
   width: 100vw;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(250, 233, 245, 0.65)), to(rgba(250, 233, 245, 0.65))), url(../images/fon-min.jpg);
@@ -2066,6 +2068,8 @@ form {
   border-radius: 50%;
   color: #ffffff;
   background-color: #fea5bb;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
