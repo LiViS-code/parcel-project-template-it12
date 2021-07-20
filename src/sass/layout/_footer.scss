@@ -60,7 +60,7 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 1.86;
-    color: #000000;
+    color: $text-color-dark;
 
     @media screen and (min-width: $desktop) {
       font-size: 16px;
@@ -83,7 +83,7 @@
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
-    color: #907e82;
+    color: $text-color-description;
 
     @media screen and (min-width: $min-mobile) and (max-width: $mobile - 1) {
       width: 150px;
