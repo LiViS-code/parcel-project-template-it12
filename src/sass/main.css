@@ -66,6 +66,10 @@ form {
   padding: 0;
 }
 
+.section__reviews {
+  padding-bottom: 86px;
+}
+
 .section__sale-address {
   padding-bottom: 113px;
   background: linear-gradient(to bottom, #ffffff 84px, #fff5f6 1px);
@@ -174,6 +178,37 @@ form {
   .container {
     max-width: 1200px;
   }
+}
+
+.container__reviews {
+  background-color: #ffffff;
+}
+
+.container__reviews-text {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 43px 50px 20px;
+  background-color: #fafafa;
+}
+
+.container__rule {
+  padding-top: 3px;
+  background: repeating-linear-gradient(#fafafa, #fafafa 29px, #e1e1e1 30px, #e1e1e1 31px);
+}
+
+.container__rule::before {
+  position: absolute;
+  top: 28px;
+  left: 61px;
+  content: '';
+  width: 54px;
+  height: 40px;
+  display: block;
+  background-image: url("../images/quotes.png");
+}
+
+.container__contact-customer {
+  padding: 0 54px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1436,15 +1471,18 @@ form {
 }
 
 .reviews__text {
-  font-family: DM Sans;
+  margin: 0 auto;
+  padding: 0 13px;
+  text-align: center;
+  font-family: "DM Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
-  line-height: 255%;
+  line-height: 31px;
   color: #000000;
-  margin-bottom: 47px;
 }
 
 .reviews__sub-text {
+  text-align: center;
   font-size: 14px;
   line-height: 186%;
   color: #000000;
@@ -1468,23 +1506,9 @@ form {
   margin-right: 10px;
 }
 
-.reviews__container {
-  margin-bottom: 54px;
-  padding: 43px 66px 26px;
-  text-align: center;
-  color: #907e82;
-  background-color: #ffffff;
-  -webkit-box-shadow: 0px 8px 30px #d41443;
-          box-shadow: 0px 8px 30px #d41443;
-  border-radius: 24px;
-}
-
 .reviews__img {
   display: block;
-  margin-top: 80px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -1776,6 +1800,11 @@ form {
 .btn__icon {
   margin-left: 8px;
   fill: currentColor;
+}
+
+.thumbs {
+  display: block;
+  margin-bottom: 29px;
 }
 
 .section-advantages {

@@ -14,6 +14,46 @@
     max-width: 1200px;
   }
 
+  // контейнер для отзыва
+  &__reviews {
+    background-color: $bg-color-light;
+  }
+
+  // контейнер для текста отзыва
+  &__reviews-text {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 43px 50px 20px;
+    background-color: $bg-color-review;
+  }
+
+  // контейнер для линеек подчеркивания
+  &__rule {
+    padding-top: 3px;
+    background: repeating-linear-gradient(
+      $bg-color-review,
+      $bg-color-review 29px,
+      $bg-color-line 30px,
+      $bg-color-line 31px
+    );
+
+    // символ кавычек в отзыве
+    &::before {
+      position: absolute;
+      top: 28px;
+      left: 61px;
+      content: '';
+      width: 54px;
+      height: 40px;
+      display: block;
+      background-image: url('../images/quotes.png');
+    }
+  }
+
+  &__contact-customer {
+    padding: 0 54px;
+  }
+
   &__media {
     @media screen and (min-width: $tablet) {
       padding: 0 36px;

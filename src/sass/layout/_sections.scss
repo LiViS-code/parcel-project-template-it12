@@ -1,4 +1,8 @@
 .section {
+  &__reviews {
+    padding-bottom: 86px;
+  }
+
   &__sale-address {
     padding-bottom: 113px;
     background: linear-gradient(to bottom, $bg-color-light 84px, $bg-color-main 1px);
