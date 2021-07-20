@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="container container--img">
     <div class="logo-nav__container">
       <a class="header__logo" href="">
         <img
@@ -9,7 +9,13 @@
           height="50"
           alt="logo"
       /></a>
-
+      <!-- <img
+        class="header__ellipse"
+        src="/images/hero_ellipse538pink.svg"
+        width="322"
+        height="324"
+        alt="ellipse1"
+      /> -->
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
@@ -63,26 +69,31 @@
           <p class="hero__amount-number">16<span class="hero__amount-text">cafes</span></p>
         </li>
         <li class="hero__number-item">
-          <p class="hero__amount-number">23<span class="hero__amount-text">food trucks</span></p>
+          <p class="hero__amount-number hero__amount-number--23">
+            23<span class="hero__amount-text">food trucks</span>
+          </p>
         </li>
       </ul>
-      <img
-        class="hero__img-pitcher"
-        srcset="/images/hero_milk_1x.png 1x, /images/hero_milk_2x.png 2x"
-        src="/images/hero_milk_1x.png"
-        width="124"
-        height="126"
-        alt="milk-pitcher"
-      />
-      <p class="hero__lorem">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et
-      </p>
-      <a class="hero__arrow-link" href="#"
-        ><svg class="hero__arrow-icon" width="8" height="8">
-          <use href="./images/sprite.svg#icon-arrow-right"></use>
-        </svg>
-      </a>
+      <div class="container__img-text-link">
+        <img
+          class="hero__img-pitcher"
+          srcset="/images/hero_milk_1x.png 1x, /images/hero_milk_2x.png 2x"
+          src="/images/hero_milk_1x.png"
+          width="124"
+          height="126"
+          alt="milk-pitcher"
+        />
+        <p class="hero__lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et
+        </p>
+        <a class="hero__arrow-link" href="#"
+          ><svg class="hero__arrow-icon" width="8" height="8">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+
       <img
         class="hero__img-girl"
         srcset="/images/hero_girl_1x.png 1x, /images/hero_girl_2x.png 2x"
