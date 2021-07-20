@@ -353,7 +353,9 @@
     padding: 163px 44px 50px;
   }
 }
-.product__overlay.is-open {
+.product1-menu-container.is-open,
+.product2-menu-container.is-open,
+.product3-menu-container.is-open {
   opacity: 1;
   pointer-events: all;
 }
