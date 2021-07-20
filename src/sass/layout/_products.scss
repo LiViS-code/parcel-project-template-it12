@@ -358,13 +358,13 @@
   pointer-events: all;
 }
 .product__overlay--pink {
-  background-color: #f88ca5;
+  background-color: $bg-product-overlay-1;
 }
 .product__overlay--brown {
-  background-color: #e8c086;
+  background-color: $bg-product-overlay-2;
 }
 .product__overlay--green {
-  background-color: #acd17b;
+  background-color: $bg-product-overlay-3;
 }
 .product__button {
   width: 40px;

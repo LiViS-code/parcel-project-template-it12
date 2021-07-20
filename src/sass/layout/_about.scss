@@ -75,7 +75,7 @@
 .about__text {
   font-weight: 500;
   line-height: 1.62;
-  color: #907e82;
+  color: $text-color-description;
 
   @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
     margin-bottom: 47px;
@@ -89,7 +89,7 @@
   }
 }
 .about__text--black-color {
-  color: #000000;
+  color: $text-color-dark;
   @media screen and (min-width: $tablet) {
     margin-bottom: 49px;
   }
