@@ -35,7 +35,7 @@
   }
   @media screen and (min-width: $mobile) {
     min-width: 450px;
-    min-height: 609px;
+    min-height: 550px;
   }
   @media screen and (min-width: $tablet) {
     min-width: 528px;
@@ -84,7 +84,7 @@
   line-height: 1.62;
   color: $accent-color;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   @media screen and (min-width: $min-mobile) {
     font-size: 16px;
   }
@@ -99,13 +99,14 @@
 .modal__img {
   margin: 0 auto;
   height: auto;
+  border-radius: 5px;
   @media screen and (min-width: $min-mobile) {
-    width: 250px;
+    width: 300px;
   }
   @media screen and (min-width: $tablet) {
-    width: 280px;
+    width: 320px;
   }
   @media screen and (min-width: $desktop) {
-    width: 300px;
+    width: 350px;
   }
 }
