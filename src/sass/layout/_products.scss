@@ -49,6 +49,12 @@
   align-items: center;
 
   padding: 161px 40px 40px;
+  transition: scale $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(105%);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -326,6 +332,7 @@
 }
 .product__icon {
   fill: $accent-color;
+  transition: fill $transition-duration $timing-function;
 }
 .product__overlay {
   position: absolute;
@@ -373,7 +380,7 @@
   height: 40px;
 
   border-radius: 50%;
-  font-family: $main-font;
+  background-color: $main-text-color;
   border: none;
 
   display: flex;
@@ -381,6 +388,15 @@
   justify-content: center;
 
   cursor: pointer;
+  transition: background-color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &:hover .product__icon,
+  &:focus .product__icon {
+    fill: $main-text-color;
+  }
 }
 .menu-toggle-close {
   position: absolute;
