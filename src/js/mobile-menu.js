@@ -9,10 +9,10 @@
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
       mobileMenu.classList.toggle('is-open');
 
-      const scrollLockMethod = !isMenuOpen
-         ? 'disableBodyScroll'
-         : 'enableBodyScroll';
-      bodyScrollLock[scrollLockMethod](document.body);
+      // const scrollLockMethod = !isMenuOpen
+      //    ? 'disableBodyScroll'
+      //    : 'enableBodyScroll';
+      // bodyScrollLock[scrollLockMethod](document.body);
    };
 
    openMenuBtn.addEventListener('click', toggleMenu);
@@ -20,6 +20,9 @@
 
    // Закрываем мобильное меню на более широких экранах
    // в случае изменения ориентации устройства.
+   $(".menu-container a").click (function(){
+    $(".menu-container.is-open").removeClass("is-open");
+  });
    window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
       if (!e.matches) return;
       mobileMenu.classList.remove('is-open');
