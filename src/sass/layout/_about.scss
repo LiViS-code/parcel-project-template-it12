@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(../images/about_background.png);
-  background-position: 0 85%;
+  background-position: 50% 85%;
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     padding-top: 130px;
     padding-bottom: 66px;
@@ -33,9 +33,6 @@
     display: flex;
     justify-content: center;
   }
-  /*  @media screen and (min-width: $desktop) {
-    width: 463px;
-  } */
 }
 .about__image {
   width: 280px;
@@ -47,7 +44,6 @@
   }
   @media screen and (min-width: $tablet) {
     width: 340px;
-    /* margin: 0 auto; */
   }
   @media screen and (min-width: $desktop) {
     width: 516px;
@@ -75,7 +71,7 @@
 .about__text {
   font-weight: 500;
   line-height: 1.62;
-  color: #907e82;
+  color: $text-color-description;
 
   @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
     margin-bottom: 47px;
@@ -89,7 +85,7 @@
   }
 }
 .about__text--black-color {
-  color: #000000;
+  color: $text-color-dark;
   @media screen and (min-width: $tablet) {
     margin-bottom: 49px;
   }

@@ -25,7 +25,8 @@
       width: 34px;
       height: 34px;
     }
-
+    transition: color $transition-duration $timing-function,
+      background-color $transition-duration $timing-function;
     &:hover,
     &:focus,
     &:active {

@@ -21,18 +21,29 @@
 
   // контейнер для текста отзыва
   &__reviews-text {
-    position: relative;
     margin-bottom: 30px;
     padding: 43px 50px 20px;
     background-color: $bg-color-review;
   }
 
+  &__quotes {
+    position: relative;
+
+    @media screen and (min-width: $tablet) {
+      margin: 0 auto;
+      width: 524px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 813px;
+    }
+  }
   // контейнер для линеек подчеркивания
   &__rule {
     padding-top: 3px;
     background: repeating-linear-gradient(
-      $bg-color-review,
-      $bg-color-review 29px,
+      transparent,
+      transparent 29px,
       $bg-color-line 30px,
       $bg-color-line 31px
     );
@@ -40,8 +51,9 @@
     // символ кавычек в отзыве
     &::before {
       position: absolute;
-      top: 28px;
-      left: 61px;
+      top: 0;
+      left: 0;
+      transform: translate3d(0, -12px, 0);
       content: '';
       width: 54px;
       height: 40px;
@@ -52,6 +64,12 @@
 
   &__contact-customer {
     padding: 0 54px;
+    margin-bottom: 30px;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    justify-content: center;
   }
 
   &__media {

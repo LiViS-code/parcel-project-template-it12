@@ -1,5 +1,7 @@
 .reviews {
   &__text {
+    position: relative;
+    z-index: 1;
     margin: 0 auto;
     padding: 0 13px;
     text-align: center;
@@ -7,21 +9,38 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 31px;
-    color: #000000;
+    color: $text-color-dark;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 2.143;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 16px;
+    }
   }
 
   &__sub-text {
     text-align: center;
     font-size: 14px;
-    line-height: 186%;
-    color: #000000;
+    line-height: 1.86;
+    color: $text-color-dark;
+
+    @media screen and (min-width: $tablet) {
+      font-size: 16px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 20px;
+    }
   }
 
   &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: #c7133e;
+    fill: $icon-color-review;
 
     margin-bottom: 18px;
   }

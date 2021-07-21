@@ -1,8 +1,15 @@
 $main-text-color: #ffffff;
 $second-text-color: #212121;
 $title-text-color: #d41443;
+$text-color-dark: #000000;
+$text-color-description: #907e82;
+$icon-color-review: #c7133e;
+$logo-color-hover: #d0eb9b;
+$link-color-hover: #b3eb45;
+
 $main-font: 'DM Sans', sans-serif;
 $title-font: 'Titan One', cursive;
+
 $bg-color-main: #fff5f6;
 $bg-color-btn-hover: #ecebeb;
 $bg-color-btn: #ffffff;
@@ -10,12 +17,18 @@ $bg-color-media-link: #fea5bb;
 $bg-color-light: #ffffff;
 $bg-color-review: #fafafa;
 $bg-color-line: #e1e1e1;
+$bg-color-btn-slider: #d9d9d9;
+$bg-color-backdrop: rgba(0, 0, 0, 0.2);
 
 $accent-color: #d41443;
 $lable-pink-color: #ffa5ba;
 $product1-card-color: #ffb8ca;
 $product2-card-color: #f0d1a5;
 $product3-card-color: #c2e297;
+
+$bg-product-overlay-1: #f88ca5;
+$bg-product-overlay-2: #e8c086;
+$bg-product-overlay-3: #acd17b;
 
 // переходы
 $transition-duration: 250ms;

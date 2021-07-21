@@ -29,10 +29,13 @@
   display: block;
   padding: 6px;
   border-radius: 30px;
-  transition: box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  margin-bottom: 255px;
+  transition: box-shadow 350ms $timing-function, background-color 350ms $timing-function;
+
   &:hover,
   &:focus {
-    background-color: #d0eb9b;
+    background-color: $logo-color-hover;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
@@ -72,9 +75,11 @@
   line-height: 1.312;
   color: $main-text-color;
   padding: 10px 0;
+  transition: color $transition-duration $timing-function;
+
   &:focus,
   &:hover {
-    color: rgb(179, 235, 69);
+    color: $link-color-hover;
   }
   &--red {
     color: $title-text-color;
@@ -82,21 +87,21 @@
 }
 .menu-toggle {
   position: absolute;
-  background: rgba(255, 184, 202, 1);
+  background: $product1-card-color;
   border: 0;
-  fill: #d41443;
+  fill: $accent-color;
   top: 22px;
   right: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill $transition-duration $timing-function;
   &:focus,
   &:hover {
-    fill: rgb(179, 235, 69);
+    fill: $link-color-hover;
     cursor: pointer;
   }
   @media screen and(min-width:$tablet) {
     top: 52px;
     right: 30%;
-    background: rgba(255, 165, 186, 1);
+    background: $lable-pink-color;
   }
   @media screen and(min-width: $desktop) {
     display: none;
@@ -117,6 +122,7 @@
   align-items: center;
   justify-content: center;
   color: $title-text-color;
+  transition: background-color $transition-duration $timing-function;
   &:focus,
   &:hover {
     background-color: $bg-color-btn-hover;
@@ -206,7 +212,7 @@
   color: $main-text-color;
   text-align: center;
   margin-right: 8px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color $transition-duration $timing-function;
   &:focus,
   &:hover {
     cursor: pointer;
@@ -222,7 +228,8 @@
   position: relative;
   color: $title-text-color;
   background-color: $main-text-color;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-duration $timing-function,
+    color $transition-duration $timing-function;
   &:focus,
   &:hover {
     color: $title-text-color;
