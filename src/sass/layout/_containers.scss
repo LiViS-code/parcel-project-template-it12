@@ -45,8 +45,26 @@
       transparent,
       transparent 29px,
       $bg-color-line 30px,
-      $bg-color-line 31px
+      transparent 31px
     );
+
+    @media screen and (min-width: $tablet) {
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 28px,
+        $bg-color-line 29px,
+        transparent 30px
+      );
+    }
+
+    @media screen and (min-width: $desktop) {
+      background: repeating-linear-gradient(
+        transparent,
+        transparent 31px,
+        $bg-color-line 33px,
+        transparent 34px
+      );
+    }
 
     // символ кавычек в отзыве
     &::before {
