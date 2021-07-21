@@ -49,6 +49,11 @@
   align-items: center;
 
   padding: 161px 40px 40px;
+  transition: scale $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    transform: scale(105%);
+  }
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
@@ -373,7 +378,7 @@
   height: 40px;
 
   border-radius: 50%;
-  font-family: $main-font;
+  background-color: $main-font;
   border: none;
 
   display: flex;
@@ -381,6 +386,11 @@
   justify-content: center;
 
   cursor: pointer;
+  transition: background-color $transition-duration $timing-function;
+  &:hover,
+  &:focus {
+    background-color: violet;
+  }
 }
 .menu-toggle-close {
   position: absolute;
