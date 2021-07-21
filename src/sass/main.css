@@ -215,7 +215,19 @@ form {
 
 .container__rule {
   padding-top: 3px;
-  background: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 30px, #e1e1e1 31px);
+  background: repeating-linear-gradient(transparent, transparent 29px, #e1e1e1 30px, transparent 31px);
+}
+
+@media screen and (min-width: 768px) {
+  .container__rule {
+    background: repeating-linear-gradient(transparent, transparent 28px, #e1e1e1 29px, transparent 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__rule {
+    background: repeating-linear-gradient(transparent, transparent 31px, #e1e1e1 33px, transparent 34px);
+  }
 }
 
 .container__rule::before {
@@ -1955,6 +1967,8 @@ form {
 
 .reviews__img {
   display: block;
+  max-width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -2125,8 +2139,9 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 50%;
   color: #ffffff;
   background-color: #fea5bb;
@@ -2359,7 +2374,6 @@ form {
 }
 
 .thumbs {
-  display: block;
   margin-bottom: 29px;
 }
 
