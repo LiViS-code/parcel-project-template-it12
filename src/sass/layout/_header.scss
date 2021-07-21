@@ -189,16 +189,16 @@
   }
 }
 .hero__button-container {
-  top: 260px;
+  bottom: 20px;
   position: relative;
   display: block;
   justify-content: center;
   align-items: baseline;
   @media screen and(min-width:$tablet) {
-    top: 5px;
+    top: 20px;
   }
   @media screen and(min-width:$desktop) {
-    top: 270px;
+    top: 310px;
   }
 }
 .hero__button {
