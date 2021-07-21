@@ -27,6 +27,12 @@ body {
   color: #ffffff;
 }
 
+@media screen and (min-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -311,6 +317,13 @@ form {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container--img {
+     max-width: 1200px;
+    position: relative;
+  }
+}
+
 .header {
   position: relative;
   height: 502px;
@@ -329,7 +342,7 @@ form {
     padding-right: 34px;
     background-image: url(../images/hero_ellipse30white.svg), url(../images/hero_ellipse30white.svg), url(../images/hero_ellipse538pink.svg);
     background-size: 16px 16px, 16px 16px, 322px 324px;
-    background-position: 95% 40%, 95% 25%, 70% 45%;
+    background-position: 94% 43%, 94% 25%, 70% 45%;
   }
 }
 
@@ -337,11 +350,9 @@ form {
   .header {
     height: 665px;
     padding-top: 38px;
-    padding-left: 46px;
-    padding-right: 95px;
-    background-image: url(../images/hero_ellipse30white.svg), url(../images/hero_ellipse30white.svg), url(../images/hero_ellipse538pink.svg);
-    background-size: 30px 30px, 30px 30px, 538px 538px;
-    background-position: 95% 40%, 95% 25%, 70% 45%;
+    background-image: url(../images/hero_ellipse538pink.svg);
+    background-size: 538px 538px;
+    background-position: 70% 45%;
   }
 }
 
@@ -416,6 +427,7 @@ form {
   font-size: 16px;
   line-height: 1.312;
   color: #ffffff;
+  padding: 10px 0;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -459,10 +471,9 @@ form {
 }
 
 .header__button {
-  width: 160px;
+  width: 170px;
   height: 44px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding: 14px 35px;
   background-color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -522,6 +533,7 @@ form {
   .hero__img-icecream {
     width: 236px;
     height: 557px;
+    top: 70px;
   }
 }
 
@@ -563,7 +575,6 @@ form {
     width: 277px;
     height: 137px;
     top: 171px;
-    left: 115px;
     font-size: 38px;
     line-height: 44px;
     letter-spacing: 0.04em;
@@ -571,10 +582,27 @@ form {
   }
 }
 
+.hero__button-container {
+  top: 260px;
+  position: relative;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__button-container {
+    top: 5px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__button-container {
-    margin-top: 246px;
-    margin-left: 60px;
+    top: 270px;
   }
 }
 
@@ -607,8 +635,7 @@ form {
 }
 
 .hero__button--white {
-  position: absolute;
-  bottom: 163px;
+  position: relative;
   color: #d41443;
   background-color: #ffffff;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -621,27 +648,27 @@ form {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) {
-  .hero__button--white {
-    bottom: 158px;
+@media screen and (max-width: 767px) {
+  .hero__amount-list {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__button--white {
-    bottom: 293px;
-  }
-}
-
-.hero__amount-list {
-  position: absolute;
-  top: 25%;
-  right: 6%;
-}
-
-@media screen and (max-width: 767px) {
   .hero__amount-list {
-    display: none;
+    position: relative;
+    width: 60px;
+    left: 1000px;
+  }
+  .hero__amount-list::before {
+    position: relative;
+    top: 130px;
+    left: 60px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url("../images/hero_ellipse30white.svg");
   }
 }
 
@@ -653,9 +680,21 @@ form {
   .hero__amount-item {
     margin-bottom: 25px;
   }
+  .hero__amount-item::before {
+    position: relative;
+    left: 60px;
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url("../images/hero_ellipse30white.svg");
+  }
 }
 
 .hero__amount-number {
+  position: absolute;
+  right: 50px;
+  top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,9 +711,19 @@ form {
   color: #d41443;
 }
 
+.hero__amount-number--23 {
+  right: 50px;
+  top: 170px;
+}
+
 @media screen and (min-width: 1200px) {
   .hero__amount-number {
     font-size: 46px;
+    top: 35px;
+    left: 20px;
+  }
+  .hero__amount-number--23 {
+    top: 135px;
   }
 }
 
@@ -696,9 +745,15 @@ form {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container__img-text-link {
+    position: relative;
+    top: 450px;
+  }
+}
+
 .hero__img-pitcher {
   position: absolute;
-  bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -711,14 +766,14 @@ form {
   .hero__img-pitcher {
     width: 188px;
     height: 191px;
-    bottom: 40px;
+    bottom: 30px;
   }
 }
 
 .hero__lorem {
   position: absolute;
-  bottom: 50px;
-  left: 20%;
+  bottom: 65px;
+  margin-left: 110px;
   width: 114px;
   height: 48px;
   font-size: 8px;
@@ -739,6 +794,7 @@ form {
     width: 200px;
     height: 78px;
     bottom: 90px;
+    margin-left: 180px;
   }
 }
 
@@ -757,8 +813,8 @@ form {
   border-radius: 50px;
   width: 18px;
   height: 18px;
-  bottom: 25px;
-  left: 20%;
+  bottom: 40px;
+  margin-left: 110px;
 }
 
 @media screen and (max-width: 767px) {
@@ -772,6 +828,7 @@ form {
     width: 26px;
     height: 26px;
     bottom: 50px;
+    margin-left: 180px;
   }
 }
 
@@ -788,8 +845,10 @@ form {
 
 .hero__img-girl {
   position: absolute;
+  width: 167px;
+  height: 133px;
   bottom: 0;
-  right: 5%;
+  right: 60px;
 }
 
 @media screen and (max-width: 767px) {
@@ -800,8 +859,11 @@ form {
 
 @media screen and (min-width: 1200px) {
   .hero__img-girl {
+    right: 0;
     width: 293px;
     height: 232px;
+    top: 395px;
+    right: 3%;
   }
 }
 
