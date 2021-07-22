@@ -1,7 +1,7 @@
 .section {
   &__gallery {
     margin-bottom: 80px;
-    background: linear-gradient(to bottom, $bg-color-main 40px, $bg-color-light 1px);
+    background: linear-gradient(to bottom, $bg-color-main 39px, $bg-color-light 1px);
 
     @media screen and (min-width: $mobile) {
       margin-bottom: 121px;
