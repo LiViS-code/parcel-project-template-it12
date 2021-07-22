@@ -74,7 +74,7 @@ form {
 
 .section__gallery {
   margin-bottom: 80px;
-  background: linear-gradient(to bottom, #fff5f6 38px, #ffffff 1px);
+  background: linear-gradient(to bottom, #fff5f6 39px, #ffffff 1px);
 }
 
 @media screen and (min-width: 480px) {
