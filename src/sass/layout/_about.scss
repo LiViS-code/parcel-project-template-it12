@@ -3,13 +3,21 @@
   padding-top: 125px;
   padding-bottom: 39px;
   background-repeat: no-repeat;
-  background-size: contain;
+
   background-image: url(../images/about_background.png);
-  background-position: 50% 85%;
+
+  @media screen and (min-width: $min-mobile) and (max-width: $tablet - 1) {
+    background-size: contain;
+    background-position: 50% 85%;
+  }
   @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
     padding-top: 130px;
     padding-bottom: 66px;
     background-image: none;
+  }
+  @media screen and (min-width: $desktop) {
+    background-size: 100% 80%;
+    background-position-y: bottom;
   }
 }
 
