@@ -31,6 +31,9 @@
     }
 
     @media screen and (min-width: $desktop) {
+      background-image: url('../images/bg-section-contact.png');
+      background-repeat: no-repeat;
+      background-size: contain;
       padding-bottom: 165px;
     }
   }
