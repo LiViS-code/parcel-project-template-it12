@@ -1,0 +1,47 @@
+<div data-modalz class="backdrop is-hidden">
+  <div class="modal-header">
+    <button data-modal-closez class="button-close" type="button">
+      <svg class="button-close__icon" width="11px" height="11px">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form>
+      <p class="modal-header__text">Leave your details, we will call you back</p>
+      <label class="form-field"
+        ><span class="form-field__label">Name</span>
+        <span class="form-field__thumb">
+          <input class="form-field__input" type="text" name="username" required />
+          <svg class="form-field__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-personform"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="form-field"
+        ><span class="form-field__label">Phone</span>
+        <span class="form-field__thumb">
+          <input class="form-field__input" type="tel" name="tel" required />
+          <svg class="form-field__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-phoneform"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="form-field"
+        ><span class="form-field__label">Mail</span>
+        <span class="form-field__thumb">
+          <input class="form-field__input" type="email" name="email" required />
+          <svg class="form-field__icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#icon-mailform"></use></svg></span
+      ></label>
+      <label class="form-field form-field--textarea"
+        ><span class="form-field__label"> Your order</span>
+        <textarea
+          class="form-field__textarea"
+          name="comment"
+          placeholder="I want to order..."
+        ></textarea>
+      </label>
+
+      <button class="modal-button" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
