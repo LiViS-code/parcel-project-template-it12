@@ -367,13 +367,13 @@
   pointer-events: all;
 }
 .product__overlay--pink {
-  background-color: $bg-product-overlay-1;
+  background: linear-gradient(to bottom, transparent 161px, $bg-product-overlay-1 300px);
 }
 .product__overlay--brown {
-  background-color: $bg-product-overlay-2;
+  background: linear-gradient(to bottom, transparent 161px, $bg-product-overlay-2 300px);
 }
 .product__overlay--green {
-  background-color: $bg-product-overlay-3;
+  background: linear-gradient(to bottom, transparent 161px, $bg-product-overlay-3 300px);
 }
 .product__button {
   width: 40px;
