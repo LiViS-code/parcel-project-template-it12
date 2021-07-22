@@ -115,7 +115,7 @@ form {
 
 @media screen and (min-width: 1200px) {
   .section__sale-address {
-    background-image: url("../images/bg-section-contact.png");
+    background: url("../images/bg-section-contact.png") 0 84px, linear-gradient(to bottom, #ffffff 84px, #fff5f6 1px);
     background-repeat: no-repeat;
     background-size: contain;
     padding-bottom: 165px;

@@ -31,7 +31,8 @@
     }
 
     @media screen and (min-width: $desktop) {
-      background-image: url('../images/bg-section-contact.png');
+      background: url('../images/bg-section-contact.png') 0 84px,
+        linear-gradient(to bottom, $bg-color-light 84px, $bg-color-main 1px);
       background-repeat: no-repeat;
       background-size: contain;
       padding-bottom: 165px;
