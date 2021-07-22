@@ -1,4 +1,23 @@
 .section {
+  &__gallery {
+    margin-bottom: 80px;
+    background: linear-gradient(to bottom, $bg-color-main 38px, $bg-color-light 1px);
+
+    @media screen and (min-width: $mobile) {
+      margin-bottom: 121px;
+      background: linear-gradient(to bottom, $bg-color-main 58px, $bg-color-light 1px);
+    }
+
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 121px;
+      background: linear-gradient(to bottom, $bg-color-main 100px, $bg-color-light 1px);
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 123px;
+      background: linear-gradient(to bottom, $bg-color-main 158px, $bg-color-light 1px);
+    }
+  }
+
   &__reviews {
     padding-bottom: 86px;
   }
