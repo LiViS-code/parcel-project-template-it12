@@ -34,7 +34,8 @@
       background: url('../images/bg-section-contact.png') 0 84px,
         linear-gradient(to bottom, $bg-color-light 84px, $bg-color-main 1px);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: 100% 100%;
+      background-position-y: bottom;
       padding-bottom: 165px;
     }
   }
